@@ -5,7 +5,7 @@ import FilterBottom from './components/Filter/FilterBottom'
 import Advs_Filtermain from './components/Filter/Advs_Filtermain' 
 
 
-function Main() {
+function Main() { 
   const [cars, setCars] = useState(null)
   const [selectedManufacturer, setSelectedManufacturer] = useState('');
   const [selectedModel, setSelectedModel] = useState('');    
@@ -19,7 +19,7 @@ function Main() {
 
 useEffect(() => {
 const fetchCars = async () => {
-  let url = '/api/cars';
+  let url = 'https://backend-8xuq.onrender.com/api/cars';
 
   // filtering parameters to the URL
   if (selectedManufacturer !== '') {
